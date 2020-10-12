@@ -15,6 +15,11 @@ RUN set -ex; \
     touch "/var/lib/dav/DavLock"; \
     chown -R www-data:www-data "/var/lib/dav"; \
     \
+    # Enable Rewrite Module.
+    for i in rewrite; do \
+        sed -i -e "/^#LoadModule ${i}_module.*/s/^#//" "conf/httpd.conf"; \
+    done; \
+    \
     # Enable DAV modules.
     for i in dav dav_fs; do \
         sed -i -e "/^#LoadModule ${i}_module.*/s/^#//" "conf/httpd.conf"; \
