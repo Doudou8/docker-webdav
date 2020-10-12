@@ -2,11 +2,11 @@
 
 This fork of [BytemarkHosting/docker-webdav](https://github.com/BytemarkHosting/docker-webdav) adds a private directory for each user in the Webdav server.
 
-# Usage
+## Usage
 
 The instructions can be found at [BytemarkHosting/docker-webdav](https://github.com/BytemarkHosting/docker-webdav).
 
-# Credit
+## Credit
 
 This project was forked from [BytemarkHosting/docker-webdav](https://github.com/BytemarkHosting/docker-webdav).
 
